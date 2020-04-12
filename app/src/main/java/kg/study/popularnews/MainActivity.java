@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         Call<News> call;
 
         if (keyword.length() > 0) {
-            call = apiInterface.getNewssearch(keyword, "publishedAt", API_KEY);
+            call = apiInterface.getNewssearch(keyword,  API_KEY);
         } else {
             call = apiInterface.getNews(country, API_KEY);
         }
