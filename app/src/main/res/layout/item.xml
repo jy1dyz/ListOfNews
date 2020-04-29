@@ -12,7 +12,7 @@
         android:layout_marginEnd="11dp"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
-        app:cardElevation="8dp"
+        app:cardElevation="4dp"
         app:cardCornerRadius="10dp">
 
         <RelativeLayout
@@ -58,7 +58,8 @@
                 android:layout_alignStart="@+id/title"
                 android:layout_alignRight="@+id/layoutDate"
                 android:layout_alignTop="@+id/layoutDate"
-                android:layout_alignEnd="@+id/layoutDate"/>
+                android:layout_alignEnd="@+id/layoutDate"
+                android:fontFamily="@font/montserrat"/>
 
             <FrameLayout
                 android:id="@+id/layoutDate"
@@ -84,14 +85,15 @@
                     android:textColor="@color/colorHint"
                     android:layout_marginStart="27dp"
                     android:layout_marginEnd="10dp"
-                    android:text="01 January 1990"/>
+                    android:text="01 January 1990"
+                    android:fontFamily="@font/montserrat"/>
 
             </FrameLayout>
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
                 android:textColor="@color/colorText"
                 android:layout_marginStart="16dp"
@@ -99,7 +101,7 @@
                 android:text="Title"
                 android:textSize="17sp"
                 android:layout_marginTop="10dp"
-                android:layout_below="@id/image"/>
+                android:layout_below="@id/image" />
 
             <TextView
                 android:id="@+id/desc"
@@ -109,7 +111,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="16dp"
-                android:text="Desc" />
+                android:text="Desc"
+                android:fontFamily="@font/montserrat"/>
 
             <TextView
                 android:id="@+id/source"
@@ -119,14 +122,14 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="10dp"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="@font/montserrat"
                 android:textStyle="bold"
                 android:textColor="@color/colorText"
                 android:maxLines="1"
                 android:drawablePadding="10dp"
                 android:singleLine="true"
                 android:ellipsize="end"
-                android:text="Source"/>
+                android:text="Source" />
 
             <TextView
                 android:id="@+id/time"
@@ -137,6 +140,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_toEndOf="@id/source"
                 android:maxLines="1"
+                android:fontFamily="@font/montserrat"
                 android:drawablePadding="10dp"
                 android:singleLine="true"
                 android:ellipsize="end"
